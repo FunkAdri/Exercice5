@@ -3,24 +3,62 @@
 <head>
   <meta charset="utf-8"/>
   <style>
-  .center{
-    text-align: center;
-  }
-  td{
-    border : 1px solid black;
-  }
   table{
     border-collapse: collapse;
-  }
+}
+td, th{
+    border: 1px solid black;
+}
   </style>
   <title>Tableau</title>
 </head>
 <body>
-<p class="center">Mon compte BNP</p>
-<thead>
-  <th><b>Date</b></th>
-  <th><b>Libellé</b></th>
-  <th><b>Crédit</b></th>
-  <th><b>Débit</b></th>
-</body>
-</html>
+<table>
+  <caption>Mon compte BNP</caption>
+  <thead> <!--En tête du tableau -->
+    <tr>
+      <th><b>Date</b></th>
+      <th><b>Libellé</b></th>
+      <th><b>Crédit</b></th>
+      <th><b>Débit</b></th>
+    </tr>
+  </thead>
+  <tfoot> <!-- Pied du tableau -->
+    <tr>
+      <th>Solde</th>
+      <th>Chiffre ?<th/>
+    </tr>
+  </tfoot>
+  <tbody> <!-- Corps du tableau -->
+    <tr>
+      <th>01/05/2016</th>
+      <th>Paye</th>
+      <th>1500</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>01/05/2016</th>
+      <th>Course de la semaine</th>
+      <th>0</th>
+      <th>152,30</th>
+    </tr>
+    <tr>
+      <th>04/05/2016</th>
+      <th>Mcdo</th>
+      <th>0</th>
+      <th>32,40</th>
+    </tr>
+    <tr>
+      <th>05/05/2016</th>
+      <th>Loyer</th>
+      <th>0</th>
+      <th>700</th>
+    </tr>
+    <tr>
+      <th>05/05/2016</th>
+      <th>Internet</th>
+      <th>0</th>
+      <th>39,90</th>
+    </tr>
+  </tbody>
+</table>
